@@ -90,30 +90,30 @@ public class JsonUtils {
         Integer age;
     }
 
-   /* public static void main(String[] args) {
-        User user=new User();
-        user.setName("zhang");
-        user.setAge(22);
-        String json = toJson(user);
-        System.out.println(json);
-
-        User user1 = jsonToBean(json, User.class);
-        System.out.println(user1);
-
-        //tolist
-        String json1="[20,15,10,5]";
-        List<Integer> list = jsonToList(json1, Integer.class);
-        System.out.println(list);
-
-        //toMap
-        String json2="{\"name\": \"jack\",\"age\": \"22\"}";
-        Map<String, String> map = jsonToMap(json2, String.class, String.class);
-        System.out.println(map);
-
-        //toProject
-        String json3="[{\"name\": \"jack\",\"age\": \"22\"},{\"name\": \"rose\",\"age\": \"21\"}]";
-        System.out.println(json3);
-
-
-    }*/
+//    public static void main(String[] args) {
+//        User user=new User();
+//        user.setName("zhang");
+//        user.setAge(22);
+//        String json = toJson(user);
+//        System.out.println(json);
+//
+//        User user1 = jsonToBean(json, User.class);
+//        System.out.println(user1);
+//
+//        //tolist
+//        String json1="[20,15,10,5]";
+//        List<Integer> list = jsonToList(json1, Integer.class);
+//        System.out.println(list);
+//
+//        //toMap
+//        String json2="{\"name\": \"jack\",\"age\": \"22\"}";
+//        Map<String, String> map = jsonToMap(json2, String.class, String.class);
+//        System.out.println(map);
+//
+//        //toProject
+//        String json3="[{\"name\": \"jack\",\"age\": \"22\"},{\"name\": \"rose\",\"age\": \"21\"}]";
+//        System.out.println(json3);
+//
+//
+//    }
 }

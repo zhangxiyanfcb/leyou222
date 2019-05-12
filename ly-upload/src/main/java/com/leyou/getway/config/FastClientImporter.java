@@ -1,4 +1,4 @@
-package com.leyou.upload.config;
+package com.leyou.getway.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableMBeanExport;
