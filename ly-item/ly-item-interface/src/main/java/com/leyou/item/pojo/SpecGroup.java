@@ -6,12 +6,13 @@ import tk.mybatis.mapper.annotation.KeySql;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name = "tb_specification")
+@Table(name = "tb_spec_group")
 @Data
-public class Specification {
+public class SpecGroup {
 
     @Id
     @KeySql(useGeneratedKeys = true)
-    private Long categoryId;
-    private String specifications;
+    private Long id;
+    private Long cid;
+    private String name;
 }

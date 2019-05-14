@@ -20,6 +20,7 @@ public enum ExceptionEnum {
     ILLEGAL_IMAGE_TYPE(400,"图片类型不合规"),
     IMAGE_UPLOAD_ERROR(500,"图片上传失败"),
     SPEC_NOT_FOND(404,"商品分组未查询到"),
+    SPEC_PARAM_NOT_FOND(404,"商品分组详情未查询到"),
     ;
     private int code;
     private String msg;
