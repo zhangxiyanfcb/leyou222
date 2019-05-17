@@ -46,7 +46,7 @@ public class BrandService {
             throw new LyException(ExceptionEnum.BRAND_NOT_FOND);
         }
 
-        PageInfo<Brand> info = new PageInfo<>(list);//pageinfo是查询结果集的封装类，属于pagehelper的封装
+        PageInfo<Brand> info = new PageInfo<>(list);//pageinfo是查询结果集的封装类，属于pagehelper的封装,而pageresult是自己在vo中的写的封装
 
         return  new PageResult<>(info.getTotal(),list);
     }
@@ -67,5 +67,32 @@ public class BrandService {
                 throw new LyException(ExceptionEnum.BRAND_SAVE_ERROR);
             }
         }
+    }
+
+//    public Brand queryById(Long brandId) {
+//        Brand brand = brandMapper.selectByPrimaryKey(brandId);
+//        if (brand == null) {
+//            throw new LyException(ExceptionEnum.BRAND_SAVE_ERROR);
+//        }
+//        return brand;
+//    }
+
+    public Brand queryById(Long id){
+        Brand brand = brandMapper.selectByPrimaryKey(id);
+        if (brand == null) {
+            throw new LyException(ExceptionEnum.BRAND_NOT_FOND);
+        }
+        return brand;
+    }
+
+    public List<Brand> queryByCid(Long cid) {
+        List<Brand> brands = brandMapper.queryByCid(cid);
+
+        if(CollectionUtils.isEmpty(brands)){
+            throw new LyException(ExceptionEnum.BRAND_NOT_FOND);
+        }
+
+        return brands;
+
     }
 }
